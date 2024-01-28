@@ -3,8 +3,8 @@
   height: 100vh;
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.45)
+      rgba(0, 0, 0, .8),
+      rgba(0, 0, 0, .5)
     ),
     url("../assets/images/hero.jpg");
   background-size: cover;
@@ -28,5 +28,5 @@
 }
 
 .start-btn {
-  font-family: "Dancing Script", cursive;
+  font-weight: 400;
 }

@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+
+body {
+    background-color: rgb(45, 224, 45);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+.container{
+    border-radius: 10px;
+    height: 550px;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.loginInfo{
+    padding: 4rem 0rem 0rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginInfo > h4{
+    font-size: x-large;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.loginInfo > p{
+    font-weight: 400;
+    color: grey;
+    font-size: 12px;
+}
+
+.flexBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formInfo{
+    padding: 2rem 0rem 3rem 4rem;
+}
+
+.formInfo > label{
+    font-size: small;
+}
+
+.formInfo > input{
+    width: 100%;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid rgb(45, 224, 45);
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+.formInfo > button{
+    width: 100%;
+    height: 36px;
+    color: white;
+    background-color: rgb(45, 224, 45);
+    border-style: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.signUp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 3rem;
+}
+
+.signUp-Text{
+    font-weight: 400;
+    color: grey;
+    font-size: 12px;
+}
+
+.signUp-Link{
+    font-weight: 400;
+    color: rgb(45, 224, 45);
+    font-size: 12px;
+}
+
+
+.illustration{
+  top: 5rem;
+  position: relative;
+  height: 400px;
+  width: 50%;
+}
