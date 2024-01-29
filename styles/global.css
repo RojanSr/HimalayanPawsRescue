@@ -134,7 +134,7 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 1.5rem;
-  border: 3px solid var(--light-green);
+  border: 1px solid var(--light-green);
   border-radius: 8px;
   z-index: 9;
   transition: all 0.2s ease-in-out;
