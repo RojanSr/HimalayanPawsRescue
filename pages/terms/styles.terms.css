@@ -1,0 +1,28 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.header{
+    text-align: center;
+
+}
+
+.title{
+    font-weight: 700;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+ol{
+    max-width: 1000px;
+    padding-left: 7rem;
+}
+
+ul > li{
+    list-style-type: square;
+}
+
+.conclusion{
+    text-align: center;
+    font-weight: 600;
+}

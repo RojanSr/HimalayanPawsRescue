@@ -1,5 +1,5 @@
 :root {
-  --semi-green: #629460;
+  --semi-green: #50C878;
 }
 * {
   padding: 0;
@@ -37,7 +37,7 @@ body {
 }
 
 .loginInfo {
-  padding: 4rem 3rem 0rem 4rem;
+  padding: 4rem 0rem 0rem 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,7 +62,7 @@ body {
 }
 
 .formInfo {
-  padding: 2rem 3rem 3rem 3rem;
+  padding: 2rem 1rem 3rem 4rem;
 }
 
 .formInfo > label {
@@ -70,7 +70,7 @@ body {
 }
 
 .formInfo > input {
-  width: 100%;
+  width: 349.333px;
   height: 36px;
   border-radius: 5px;
   border: 1px solid var(--semi-green);
@@ -113,4 +113,5 @@ body {
   position: relative;
   height: 400px;
   width: 50%;
+  padding: 1rem;
 }
