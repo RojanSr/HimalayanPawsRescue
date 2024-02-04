@@ -1,10 +1,16 @@
 @import url("fonts.css");
 
 :root {
+  --primary-clr: #f5ede0;
+  --secondary-clr: #005a55;
+  --white: #eaf1f0;
+  --black: #262626;
+  --black-100: #89857f;
   --light-green: white;
   --semi-green: #629460;
   --dark-green: #243119;
-  --hover-green: #50C878;
+  --hover-green: #50c878;
+  --hover-white: rgba(255, 255, 255, 0.081);
   --navbar-height: 70px;
 }
 
@@ -23,9 +29,10 @@ a {
 
 html,
 body {
-  color: var(--light-green);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  background-color: var(--primary-clr);
+  color: var(--black);
 }
 
 /* Navbar styles */
@@ -35,13 +42,16 @@ body {
 }
 
 .navbar {
-  padding: 15px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 200px;
+  margin: 14px 200px;
   animation: 1s uptodown ease-in-out;
   transform: translateZ(0);
+  background-color: var(--secondary-clr);
+  color: var(--white);
+  border-radius: 50px;
 }
 
 .sticky {
@@ -53,10 +63,13 @@ body {
 }
 
 .logo {
-  width: 100px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 22px;
 }
 .logo-img {
-  width: 100%;
+  width: 70px;
   object-fit: contain;
 }
 
@@ -142,9 +155,9 @@ body {
 }
 
 .btn:hover {
-  background: var(--hover-green);
-  border-color: var(--hover-green);
-  color: var(--dark-green);
+  background: var(--hover-white);
+  /* border-color: var(--hover-green); */
+  color: var(--hover-green);
 }
 
 .btn:active {

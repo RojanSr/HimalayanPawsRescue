@@ -1,5 +1,5 @@
 @import url(global.css);
-.hero-banner {
+/* .hero-banner {
   height: 100vh;
   background-image: linear-gradient(
       to bottom,
@@ -10,12 +10,12 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 .hero-text {
   font-size: 3.2rem;
   font-weight: 700;
-  color: var(--light-green);
+  color: var(--black);
   margin-top: 180px;
   font-family: "Dancing Script", cursive;
 }
