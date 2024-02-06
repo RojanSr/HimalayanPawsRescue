@@ -8,9 +8,6 @@
   --black-100: #89857f;
   --orange: #f69b03;
   --hover-orange: orange;
-  --light-green: white;
-  --semi-green: #629460;
-  --dark-green: #243119;
   --navbar-height: 70px;
 }
 
@@ -24,7 +21,7 @@
 
 a {
   text-decoration: none;
-  color: var(--light-green);
+  color: var(--white);
 }
 
 html,
@@ -35,16 +32,13 @@ body {
 }
 
 /* Navbar styles */
-.header {
-  min-height: var(--navbar-height);
-}
 
 .navbar {
-  padding: 12px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 18px 120px;
+  padding: 12px 30px;
+  margin: 12px 0px;
   animation: 1s uptodown ease-in-out;
   transform: translateZ(0);
   background-color: var(--secondary-clr);
@@ -97,11 +91,22 @@ body {
   width: 100%; /* Expand the underline to 100% on hover */
 }
 .nav-list a {
-  color: var(--light-green);
+  color: var(--white);
 }
 
 .nav-list a:hover {
   color: var(--orange);
+}
+
+.container {
+  max-width: 1300px; /* Adjust this value based on your design */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Define left and right margins */
+  box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+.main-container {
+  margin-top: 120px;
 }
 
 .transition {
@@ -128,9 +133,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-main {
-  margin: 0px 120px;
 }
 
 /* Button */

@@ -2,7 +2,6 @@
 
 .hero-container {
   max-width: 480px;
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -15,7 +14,7 @@
 .meow-text {
   position: absolute;
   top: 30px;
-  left: -50px;
+  left: -30px;
   height: 120px;
   animation: uptodown 1s ease-in-out;
   animation-delay: 1.8s;
@@ -55,7 +54,7 @@
 }
 
 .image {
-  height: 300px;
+  height: 330px;
   border-radius: 24px;
 }
 
