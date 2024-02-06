@@ -46,13 +46,6 @@
   font-weight: 400;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
 .image {
   height: 330px;
   border-radius: 24px;

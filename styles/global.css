@@ -103,6 +103,10 @@ body {
   margin: 0 auto; /* Center the container */
   padding: 0 20px; /* Define left and right margins */
   box-sizing: border-box; /* Include padding and border in the total width */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .main-container {
