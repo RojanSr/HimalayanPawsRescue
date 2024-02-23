@@ -1,7 +1,7 @@
-:root{
-  --semi-green:#005a55;
-  --orange:#f69b03;
-  --primary-clr:#f5ede0;
+:root {
+  --semi-green: #005a55;
+  --orange: #f69b03;
+  --primary-clr: #f5ede0;
 }
 * {
   padding: 0;
@@ -20,6 +20,81 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
+  position: relative;
+}
+
+.custom-shape-divider-top-1707570763 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  opacity: 0;
+  animation: 1.8s uptodown ease-in;
+  animation-fill-mode: forwards;
+}
+
+.custom-shape-divider-top-1707570763 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 177px;
+}
+
+.custom-shape-divider-top-1707570763 .shape-fill {
+  fill: #e7d6bd;
+}
+
+.custom-shape-divider-bottom-1707570979 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  opacity: 0;
+  animation: 1.8s downtoup ease-in;
+  animation-fill-mode: forwards;
+}
+
+.custom-shape-divider-bottom-1707570979::after {
+  content: "";
+}
+
+.custom-shape-divider-bottom-1707570979 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 177px;
+}
+
+.custom-shape-divider-bottom-1707570979 .shape-fill {
+  fill: #e7d6bd;
+}
+
+@keyframes uptodown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes downtoup {
+  from {
+    transform: translateY(20px) rotate(180deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px) rotate(180deg);
+    opacity: 1;
+  }
 }
 
 .container {
@@ -29,6 +104,7 @@ body {
   max-width: 800px;
   background-color: white;
   box-shadow: -1px 2px 37px -2px rgba(0, 0, 0, 0.2);
+  z-index: 9;
 }
 
 .loginInfo {
@@ -64,7 +140,9 @@ body {
   font-size: small;
 }
 
-.email,.password,.name {
+.email,
+.password,
+.name {
   width: 349.333px;
   height: 36px;
   border-radius: 5px;
@@ -84,7 +162,7 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-.formInfo > button:hover{
+.formInfo > button:hover {
   color: black;
   background-color: white;
 }
@@ -114,9 +192,6 @@ body {
   height: 550px;
 }
 
-
-
-.terms{
+.terms {
   color: var(--orange);
 }
-
