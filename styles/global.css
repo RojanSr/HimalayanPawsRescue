@@ -1,7 +1,7 @@
 @import url("fonts.css");
 
 :root {
-  --primary-clr: #f5ede0;
+  --primary-clr: #efefef;
   --secondary-clr: #005a55;
   --white: #eaf1f0;
   --black: #262626;
@@ -9,6 +9,7 @@
   --orange: #f69b03;
   --hover-orange: orange;
   --navbar-height: 70px;
+  --secondary-txt-clr: #494949;
 }
 
 /* Global reset styles */
@@ -21,7 +22,7 @@
 
 a {
   text-decoration: none;
-  color: var(--white);
+  color: var(--black);
 }
 
 html,
@@ -69,8 +70,8 @@ body {
   margin: 12px 0px;
   animation: 1s uptodown ease-in-out;
   transform: translateZ(0);
-  background-color: var(--secondary-clr);
-  color: var(--white);
+  /* background-color: var(--secondary-clr); */
+  color: var(--secondary-txt-clr);
   border-radius: 50px;
 }
 
@@ -118,12 +119,39 @@ body {
 .nav-list li:hover::before {
   width: 100%; /* Expand the underline to 100% on hover */
 }
-.nav-list a {
-  color: var(--white);
+.logo-text {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Dancing Script", cursive;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 1.4px;
+  text-underline-offset: 0.5rem;
+  color: var(--black);
 }
 
-.nav-list a:hover {
-  color: var(--orange);
+.nav-sign-in-btn-txt {
+  color: var(--white);
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-sign-in-btn {
+  background: var(--secondary-clr);
+  border: 2px solid var(--secondary-clr);
+  border-radius: 8px;
+  padding: 4px 8px;
+  transition: 0.2s transform ease-in-out;
+  transform: translateZ(0);
+}
+
+.nav-sign-in-btn:hover {
+  transform: scale(1.05);
+}
+
+.nav-sign-in-btn:active {
+  transform: scale(0.9);
 }
 
 .container {
