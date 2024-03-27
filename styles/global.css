@@ -2,7 +2,7 @@
 
 :root {
   --primary-clr: #efefef;
-  --secondary-clr: #005a55;
+  --secondary-clr: #519259;
   --white: #eaf1f0;
   --black: #262626;
   --black-100: #89857f;
@@ -67,12 +67,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 12px 30px;
-  margin: 12px 0px;
-  animation: 1s uptodown ease-in-out;
+  /* animation: 1s uptodown ease-in-out; */
   transform: translateZ(0);
-  /* background-color: var(--secondary-clr); */
   color: var(--secondary-txt-clr);
-  border-radius: 50px;
 }
 
 .sticky {
@@ -146,12 +143,8 @@ body {
   transform: translateZ(0);
 }
 
-.nav-sign-in-btn:hover {
-  transform: scale(1.05);
-}
-
 .nav-sign-in-btn:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 .container {
@@ -166,7 +159,7 @@ body {
 }
 
 .main-container {
-  margin-top: 120px;
+  margin-top: 64px;
 }
 
 .transition {
@@ -197,24 +190,19 @@ body {
 
 /* Button */
 .btn {
-  background: var(--orange);
-  padding: 12px 24px;
+  background: var(--secondary-clr);
+  padding: 8px 16px;
   color: var(--white);
   font-weight: 500;
   letter-spacing: 1px;
-  font-size: 1rem;
-  border: 2px solid var(--orange);
+  font-size: 0.9rem;
+  border: 1px solid var(--secondary-clr);
   border-radius: 8px;
   z-index: 9;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
-.btn:hover {
-  background-color: transparent;
-  color: var(--black);
-}
-
 .btn:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }

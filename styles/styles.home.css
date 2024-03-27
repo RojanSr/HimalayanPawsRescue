@@ -1,5 +1,12 @@
 @import url(global.css);
 
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(../assets/images/homepage/heroImg.jpg) center / cover no-repeat;
+  height: 600px;
+  position: relative;
+}
+
 .hero-container {
   width: 100%;
   display: flex;
@@ -13,7 +20,8 @@
   text-align: center;
   align-items: center;
   gap: 10px;
-  margin-top: 40px;
+  margin-top: 140px;
+  color: white;
 }
 
 .meowtainer {
@@ -41,7 +49,6 @@
   font-size: 2.8rem;
   line-height: 1.7ch;
   font-weight: 700;
-  color: var(--black);
 }
 
 .start-btn-container {
@@ -52,7 +59,7 @@
 }
 
 .start-btn {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .image {
@@ -90,4 +97,63 @@
   animation-fill-mode: forwards;
   opacity: 0;
   transform: translateY(100px);
+}
+
+.widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  top: 93%;
+}
+
+.widget__card {
+  width: 350px;
+  height: 200px;
+  padding: 12px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 16px;
+}
+
+.widget__card--transparent {
+  background: transparent;
+}
+
+.widget__card--block {
+  background: #fff;
+}
+
+.widget__paw-icon {
+  display: inline-block;
+  background-color: var(--secondary-clr);
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.widget__paw-icon > i {
+  font-size: 1.8rem;
+}
+
+.widget h2 {
+  font-size: 20px;
+}
+
+.widget p {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.widget__learn {
+  cursor: pointer;
+  padding-top: 12px;
+  color: var(--orange);
+  font-size: 14px;
 }
